@@ -8,7 +8,7 @@ function find(arr, tar){
   console.log(ar);
   for (let i=0; i<ar.length; i++){
     for (let j=0; j<ar.length; j++){
-      if (arr[i]+ar[j]===tar) return [i+1, j+1];
+      if (arr[i]+ar[j]===tar && i!=j) return [i+1, j+1];
     }
   }
   return false;
